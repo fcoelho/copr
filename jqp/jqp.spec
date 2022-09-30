@@ -23,16 +23,16 @@ Source:         %{gosource}
 # BuildRequires: golang(github.com/stretchr/testify/assert)
 # BuildRequires: golang(gopkg.in/alecthomas/kingpin.v2)
 
-BuildRequires: golang(github.com/alecthomas/chroma)
-BuildRequires: golang(github.com/atotto/clipboard)
-BuildRequires: golang(github.com/charmbracelet/bubbles)
-BuildRequires: golang(github.com/charmbracelet/bubbletea)
-BuildRequires: golang(github.com/charmbracelet/lipgloss)
-BuildRequires: golang(github.com/itchyny/gojq)
-BuildRequires: golang(github.com/muesli/termenv)
-BuildRequires: golang(github.com/spf13/cobra)
-BuildRequires: golang(github.com/spf13/pflag)
-BuildRequires: golang(github.com/spf13/viper)
+# BuildRequires: golang(github.com/alecthomas/chroma)
+# BuildRequires: golang(github.com/atotto/clipboard)
+# BuildRequires: golang(github.com/charmbracelet/bubbles)
+# BuildRequires: golang(github.com/charmbracelet/bubbletea)
+# BuildRequires: golang(github.com/charmbracelet/lipgloss)
+# BuildRequires: golang(github.com/itchyny/gojq)
+# BuildRequires: golang(github.com/muesli/termenv)
+# BuildRequires: golang(github.com/spf13/cobra)
+# BuildRequires: golang(github.com/spf13/pflag)
+# BuildRequires: golang(github.com/spf13/viper)
 
 %description
 %{common_description}
