@@ -1,6 +1,6 @@
 %global goipath         gopkg.in/noahgorstein/jqp.v0
 %global forgeurl        https://github.com/noahgorstein/jqp
-Version:                0.1.0
+Version:                v0.1.0
 
 %gometa
 
