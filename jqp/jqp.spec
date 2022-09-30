@@ -1,6 +1,5 @@
-# https://github.com/square/go-jose
 %global goipath         gopkg.in/noahgorstein/jqp.v0
-%global forgeurl        https://github.com/square/go-jose
+%global forgeurl        https://github.com/noahgorstein/jqp
 Version:                0.1.0
 
 %gometa
