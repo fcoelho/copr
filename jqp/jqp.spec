@@ -1,35 +1,64 @@
-Name: jqp
-Version: 0.1.0
-Release: 1%{?dist}
-License: MIT
-Summary: a TUI playground for exploring jq.
-URL: https://github.com/noahgorstein/jqp
+# https://github.com/square/go-jose
+%global goipath         gopkg.in/noahgorstein/jqp.v0
+%global forgeurl        https://github.com/square/go-jose
+Version:                0.1.0
+
+%gometa
+
+%global common_description %{expand:
+a TUI playground for exploring jq.}
+
+%global golicenses    LICENSE
+%global godocs        *.md
+
+Name:           %{goname}
+Release:        1%{?dist}
+Summary:        a TUI playground for exploring jq.
+License:        MIT
+URL:            %{gourl}
+Source:         %{gosource}
+
+# BuildRequires: golang(golang.org/x/crypto/ed25519)
+# BuildRequires: golang(golang.org/x/crypto/pbkdf2)
+# BuildRequires: golang(github.com/stretchr/testify/assert)
+# BuildRequires: golang(gopkg.in/alecthomas/kingpin.v2)
+
+BuildRequires: golang(github.com/alecthomas/chroma)
+BuildRequires: golang(github.com/atotto/clipboard)
+BuildRequires: golang(github.com/charmbracelet/bubbles)
+BuildRequires: golang(github.com/charmbracelet/bubbletea)
+BuildRequires: golang(github.com/charmbracelet/lipgloss)
+BuildRequires: golang(github.com/itchyny/gojq)
+BuildRequires: golang(github.com/muesli/termenv)
+BuildRequires: golang(github.com/spf13/cobra)
+BuildRequires: golang(github.com/spf13/pflag)
+BuildRequires: golang(github.com/spf13/viper)
 
 %description
-a TUI playground for exploring jq.
+%{common_description}
+
+%gopkg
 
 %prep
-# installing a binary, no source code used
+%goprep
 
 %build
-# cd %{_builddir}
-curl -LO https://github.com/noahgorstein/jqp/releases/download/v%{version}/jqp_%{version}_Linux_%{_arch}.tar.gz
-tar xf jqp_%{version}_Linux_%{_arch}.tar.gz
+%gobuild -o %{gobuilddir}/bin/$(basename $cmd) %{goipath}/$cmd
 
 %install
-mkdir -p %{buildroot}/usr/bin/
-mkdir -p %{buildroot}/usr/share/licenses/jqp/
-mkdir -p %{buildroot}/usr/share/doc/jqp/
+%gopkginstall
+install -m 0755 -vd                     %{buildroot}%{_bindir}
+install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 
-install -m 755 jqp %{buildroot}/usr/bin/jqp
-install -m 644 LICENSE %{buildroot}/usr/share/licenses/jqp/LICENSE
-install -m 644 README.md %{buildroot}/usr/share/doc/jqp/README.md
+%check
+%gocheck
 
-#-- FILES ---------------------------------------------------------------------#
 %files
-/usr/bin/jqp
-/usr/share/licenses/jqp/LICENSE
-/usr/share/doc/jqp/README.md
+%license %{golicenses}
+%doc %{godocs}
+%{_bindir}/*
+
+%gopkgfiles
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
