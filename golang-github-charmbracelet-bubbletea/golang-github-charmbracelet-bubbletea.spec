@@ -1,6 +1,6 @@
 # https://github.com/charmbracelet/bubbletea
 %global goipath         github.com/charmbracelet/bubbletea
-Version:                v0.22.1
+Version:                0.22.1
 
 %gometa
 
