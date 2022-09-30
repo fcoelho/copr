@@ -18,7 +18,7 @@ License:        MIT
 URL:            %{gourl}
 Source:         %{gosource}
 
-# BuildRequires: golang(github.com/davecgh/go-spew/spew)
+BuildRequires: golang(github.com/containerd/console)
 # BuildRequires: golang(github.com/pmezard/go-difflib/difflib)
 # BuildRequires: golang(github.com/stretchr/objx)
 
