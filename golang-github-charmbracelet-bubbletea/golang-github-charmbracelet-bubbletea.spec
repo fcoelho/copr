@@ -19,6 +19,8 @@ URL:            %{gourl}
 Source:         %{gosource}
 
 BuildRequires: golang(github.com/containerd/console)
+BuildRequires: golang(github.com/mattn/go-isatty)
+BuildRequires: golang(github.com/mattn/go-localereader)
 # BuildRequires: golang(github.com/pmezard/go-difflib/difflib)
 # BuildRequires: golang(github.com/stretchr/objx)
 
@@ -40,4 +42,9 @@ BuildRequires: golang(github.com/containerd/console)
 
 
 %changelog
+* Mon Oct 03 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com>
+- osiosdifosd (felipe.coelho@deskpro.com)
+- aosdasduoi (felipe.coelho@deskpro.com)
+- oaoidasdioasiod (felipe.coelho@deskpro.com)
+
 
