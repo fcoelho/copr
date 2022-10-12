@@ -15,14 +15,14 @@ CodePage decoder for Windows.}
 
 Name:           %{goname}
 Version:        0
-Release:        0.3%{?dist}
+Release:        0.4%{?dist}
 Summary:        CodePage decoder for Windows
 
 License:        MIT
 URL:            %{gourl}
 Source0:        %{gosource}
 
-BuildRequires: golang(golang.org/x/text/transform)
+BuildRequires: golang(golang.org/x/text)
 
 %description
 %{common_description}
@@ -43,6 +43,12 @@ BuildRequires: golang(golang.org/x/text/transform)
 %gopkgfiles
 
 %changelog
+* Wed Oct 12 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0-0.4
+- 
+
+* Wed Oct 12 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com>
+- 
+
 * Wed Oct 12 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0-0.3
 - 
 
