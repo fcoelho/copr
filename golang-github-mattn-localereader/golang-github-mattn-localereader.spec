@@ -1,6 +1,6 @@
 # https://github.com/charmbracelet/bubbletea
 %global goipath         github.com/mattn/go-localereader
-Version: 2
+Version: 3
 %global commit 2491eb6c1c75720122ef321ed7acc3a8d9de95b1
 
 %gometa
@@ -41,6 +41,9 @@ Source:         %{gosource}
 
 
 %changelog
+* Wed Oct 12 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 3-1
+- 
+
 * Wed Oct 12 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 2-1
 - 
 
