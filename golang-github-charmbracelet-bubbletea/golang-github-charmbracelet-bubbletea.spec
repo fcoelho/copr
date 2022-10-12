@@ -10,9 +10,10 @@ simple and complex terminal applications, either inline, full-window, or a mix
 of both.}
 
 %global golicenses    LICENSE
+%global godocs          README.md
 
 Name:           %{goname}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        The fun, functional and stateful way to build terminal apps
 License:        MIT
 URL:            %{gourl}
@@ -35,16 +36,9 @@ BuildRequires: golang(github.com/mattn/go-localereader)
 %install
 %gopkginstall
 
-%check
-%gocheck
-
 %gopkgfiles
 
-
 %changelog
-* Mon Oct 03 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com>
-- osiosdifosd (felipe.coelho@deskpro.com)
-- aosdasduoi (felipe.coelho@deskpro.com)
-- oaoidasdioasiod (felipe.coelho@deskpro.com)
-
+* Wed Oct 12 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0.22.1-2
+- 
 
