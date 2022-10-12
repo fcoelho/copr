@@ -13,7 +13,7 @@ of both.}
 %global godocs          README.md
 
 Name:           %{goname}
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        The fun, functional and stateful way to build terminal apps
 License:        MIT
 URL:            %{gourl}
@@ -39,6 +39,6 @@ BuildRequires: golang(github.com/mattn/go-localereader)
 %gopkgfiles
 
 %changelog
-* Wed Oct 12 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0.22.1-2
+* Wed Oct 12 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0.22.1-3
 - 
 
