@@ -35,3 +35,6 @@ BuildRequires: golang(github.com/mattn/go-runewidth)
 %gopkgfiles
 
 %changelog
+* Thu Oct 13 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0-0.1
+- new package built with tito
+
