@@ -12,7 +12,7 @@ Raw ANSI sequence helpers.}
 
 Name:           %{goname}
 Version:        0
-Release:        0.2%{?dist}
+Release:        0.3%{?dist}
 Summary:        Raw ANSI sequence helpers
 
 License:        MIT
@@ -32,10 +32,13 @@ BuildRequires: golang(github.com/mattn/go-runewidth)
 %install
 %gopkginstall
 
+%check
+%gocheck
+
 %gopkgfiles
 
 %changelog
-* Thu Oct 13 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0-0.2
+* Thu Oct 13 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0-0.3
 - 
 
 * Thu Oct 13 2022 Felipe Bessa Coelho <felipe.coelho@deskpro.com> 0-0.1
