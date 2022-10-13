@@ -22,6 +22,11 @@ Source:         %{gosource}
 BuildRequires: golang(github.com/containerd/console)
 BuildRequires: golang(github.com/mattn/go-isatty)
 BuildRequires: golang(github.com/mattn/go-localereader)
+BuildRequires: golang(github.com/muesli/ansi)
+BuildRequires: golang(github.com/muesli/cancelreader)
+BuildRequires: golang(github.com/muesli/reflow)
+BuildRequires: golang(github.com/muesli/termenv)
+BuildRequires: golang(golang.org/x/term)
 # BuildRequires: golang(github.com/pmezard/go-difflib/difflib)
 # BuildRequires: golang(github.com/stretchr/objx)
 
