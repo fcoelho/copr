@@ -15,25 +15,25 @@ of both.}
 %global godocs          README.md
 
 Name:           %{goname}
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        The fun, functional and stateful way to build terminal apps
 License:        MIT
 URL:            %{gourl}
 Source:         %{gosource}
 
-%generate_buildrequires
-%go_generate_buildrequires
+# % generate_buildrequires
+# % go_generate_buildrequires
 
-# BuildRequires: golang(github.com/containerd/console)
-# BuildRequires: golang(github.com/mattn/go-isatty)
-# BuildRequires: golang(github.com/mattn/go-localereader)
-# BuildRequires: golang(github.com/muesli/ansi)
-# BuildRequires: golang(github.com/muesli/cancelreader)
-# BuildRequires: golang(github.com/muesli/reflow)
-# BuildRequires: golang(github.com/muesli/termenv)
-# BuildRequires: golang(golang.org/x/term)
-# # BuildRequires: golang(github.com/pmezard/go-difflib/difflib)
-# # BuildRequires: golang(github.com/stretchr/objx)
+BuildRequires: golang(github.com/containerd/console)
+BuildRequires: golang(github.com/mattn/go-isatty)
+BuildRequires: golang(github.com/mattn/go-localereader)
+BuildRequires: golang(github.com/muesli/ansi)
+BuildRequires: golang(github.com/muesli/cancelreader)
+BuildRequires: golang(github.com/muesli/reflow)
+BuildRequires: golang(github.com/muesli/termenv)
+BuildRequires: golang(golang.org/x/term)
+# BuildRequires: golang(github.com/pmezard/go-difflib/difflib)
+# BuildRequires: golang(github.com/stretchr/objx)
 
 %description
 %{common_description}
