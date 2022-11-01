@@ -1,3 +1,5 @@
+%bcond_without check
+
 # https://github.com/charmbracelet/bubbletea
 %global goipath         github.com/charmbracelet/bubbletea
 Version:                0.22.1
@@ -13,7 +15,7 @@ of both.}
 %global godocs          README.md
 
 Name:           %{goname}
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        The fun, functional and stateful way to build terminal apps
 License:        MIT
 URL:            %{gourl}
@@ -44,8 +46,10 @@ Source:         %{gosource}
 %install
 %gopkginstall
 
+%if %{with check}
 %check
 %gocheck
+%endif
 
 %gopkgfiles
 
