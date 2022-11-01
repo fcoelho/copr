@@ -15,7 +15,7 @@ of both.}
 %global godocs          README.md
 
 Name:           %{goname}
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        The fun, functional and stateful way to build terminal apps
 License:        MIT
 URL:            %{gourl}
@@ -38,13 +38,15 @@ Source:         %{gosource}
 %description
 %{common_description}
 
-%gopkg
+# % gopkg
+%godevelpkg
 
 %prep
 %goprep
 
 %install
-%gopkginstall
+# % gopkginstall
+%godevelinstall
 
 %if %{with check}
 %check
