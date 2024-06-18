@@ -1,6 +1,6 @@
 Name:           terragrunt
-Version:        0.58.11
-Release:        2%{?dist}
+Version:        0.59.4
+Release:        1%{?dist}
 Summary:        terragrunt
 URL:            https://github.com/gruntwork-io/terragrunt
 License:        MIT
