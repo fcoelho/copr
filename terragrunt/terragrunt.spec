@@ -1,6 +1,6 @@
 Name:           terragrunt
-Version:        0.59.4
-Release:        2%{?dist}
+Version:        0.60.1
+Release:        1%{?dist}
 Summary:        terragrunt
 
 License:        MIT
@@ -30,6 +30,9 @@ install -D -m 0755 terragrunt %{buildroot}/usr/bin/terragrunt
 /usr/bin/terragrunt
 
 %changelog
+* Tue Jul 09 2024 Felipe Bessa Coelho <me@fcoelho.pt> 0.60.1-1
+- add 0.60.1 (me@fcoelho.pt)
+
 * Wed Jun 19 2024 Felipe Bessa Coelho <me@fcoelho.pt> 0.59.4-2
 - test (me@fcoelho.pt)
 
